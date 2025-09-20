@@ -27,10 +27,11 @@ const loggedInBox = document.getElementById("logged-in-box");
 // Auth State
 auth.onAuthStateChanged(user => {
   if (user) {
-    showLoggedIn();
-    startInactivityTimer();
-  } else {
-    showLoginForm();
+    // Optional: get token if you plan to do something with it later
+    user.getIdToken().then(token => {
+      sessionStorage.setItem("firebaseToken", token); // if needed
+      window.location.href = "https://myitbookstack.com";
+    });
   }
 });
 
