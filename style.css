@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 2em;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 0.75em;
+  margin: 0.5em 0;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 0.75em;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+#reset-password {
+  background: transparent;
+  color: #aaa;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
+#error-message {
+  color: red;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 0.5em;
+}
